@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ReactPlayer from 'react-player';
 import video from './assets/ElaineLee_Portfolio_aminated_works.mov'
-import myPhoto from './assets/myPhoto.png'
+import myPhoto from './assets/myPhoto2026.jpg'
 import ParticlesContainer from './components/Particles'
 import Portfolio from './components/Portfolio'
 import Button from './components/Button'
@@ -120,6 +120,9 @@ class App extends Component {
         addClass: true
     })
   }
+  openLinkedIn= () =>{
+    window.open('https://www.linkedin.com/in/elainelee999/', '_blank')
+  }
    
     
 
@@ -145,13 +148,13 @@ class App extends Component {
                <li onClick={this.closeOverlay}>home</li>
                <li onClick={this.showPortfolioOverlay}>portfolio</li>
                <li onClick={this.showAboutOverlay}>about</li>
-               <li ><a id='email-link' href="mailto:elaneylee@gmail.com" target="_top" onClick={this.closeOverlay}>email me</a></li>
+               <li onClick={this.openLinkedIn}>contact me</li>
              </nav>
        
        
         <div className='header__info__container'>
         <h1>ELAINE LEE</h1>
-        <p className='job-title'>Front-End Developer and Engineer.</p>
+        <p className='job-title'>Technology Leader, Engineer, Product Manager, AI Integrator, Change Manager</p>
 
         </div>
        
@@ -223,12 +226,12 @@ class App extends Component {
         <h1 style={{color: 'white'}}>React Node Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          
-         <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p> */}
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1 style={{color: 'white'}}>React Node Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
         
-         <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p> */}
          </div> }
         </section>
          <section className='work-2'>
@@ -237,12 +240,12 @@ class App extends Component {
         <h1 style={{color: 'white'}}>Preact Node Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
         
-         <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p> */}
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
         <h1 style={{color: 'white'}}>Preact Node Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
          
-         <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p> */}
          </div> }
         </section>
          <section className='work-3'>
@@ -264,12 +267,12 @@ class App extends Component {
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1 style={{color: 'white'}}>jQuery HTML Sass Feature</h1>
           <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
-         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p> */}
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1 style={{color: 'white'}}>jQuery HTML Sass Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
         
-         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p> */}
          </div> }
     
         </section>
@@ -283,8 +286,8 @@ class App extends Component {
         <h1 style={{color: 'white'}}>jQuery, Sass, Javascript</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJS, jQuery, Mobile Responsive, Git, on CodePen and Beachbody website'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>View Demo</a></p>
-         <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>View at Beachbody</a></p>
+         {/* <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>View Demo</a></p> */}
+         {/* <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>View at Beachbody</a></p> */}
          </div> }
 
         </section>
@@ -309,12 +312,12 @@ class App extends Component {
         <h1 style={{color: 'white'}} >Javascript HTML CSS, Sass</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p> */}
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
         <h1 style={{color: 'white'}}>Javascript HTML CSS, Sass</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p>
+         {/* <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p> */}
          </div> }
         
         </section>  
@@ -339,12 +342,12 @@ class App extends Component {
         <h1 style={{color: 'white'}}>React Node Webpack</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
          
-         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
+         {/* <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p> */}
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
         <h1 style={{color: 'white'}}>React Node Webpack</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency for UA'} text={'Technologies used:\nJS, CSS3, Mobile Responsive, Media Queries'}/>
         
-         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>View Demo</a></p>
+         {/* <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>View Demo</a></p> */}
          </div> }
         </section> 
         
@@ -366,26 +369,17 @@ class App extends Component {
       <img src={myPhoto}/>
       <h1>ABOUT</h1>
          <div className='left-about-text'>
-         Elaine began her programming career at Cornell University and upon graduating, went on to work for Computer Sciences Corporation (CSC) as a computer analyst.  
-         After a few years, she left the industry to work on Wall Street, but eventually found her way back to her first love and passion.  
-         To get up-to-date quickly on the modern technology stack in Los Angeles, she invested in obtaining a technical foundation through an immersive full-time web development course at General Assembly.  
-         During that time she programmed in Ruby on Rails and AngularJS.
-         After graduating from the course she received a job offer at Beachbody LLC in Santa Monica. 
-         During her 2 1/2 years at Beachbody she created landing pages and worked on exciting new features as a full-stack developer.
+         Elaine began her programming career as an undergraduate student at Cornell University. Since graduation she has worked in Finance, Pharma, Ad Tech, Fitness, News Media, and Management Consulting.  Elaine is a hands-on technology leader with 15+ years of experience spanning software engineering, product and project management with cross-functional delivery from ideation through execution to production in an everchanging global environment.
+         
+         Elaine currently works for a large global biotechnology company leading global teams to develop technology capabilities that ultimately help to drive our company's mission: to serve patients.
          </div>
          <div className='right-about-text'>  
-         Elaine expanded her programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
-         She joined the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
-         At RED now for 2 years, Elaine has created a multitude of web applications for RED's clients ranging from Nike, Hulu, Netflix, Disney, and Paramount.  
-         She has also created responsive email templates and websites.  
-         Elaine has been using ReactJS in production for the past 2 years.  
-         She was a part-time teaching assistant at UCLA for their evening programming course. 
-         Elaine loves working with ReactJS, NodeJS, Redux to create dynamic web applications that are visually stimulating and innovative.
+         
          </div>
        </div>
        <div id='about-container' style={{display: 'none'}}>
-      <h1>CONTACT</h1>
-      <p>click to email me:{'\n'}<a href='mailto:elaneylee@gmail.com'>{'\n'}elaneylee@gmail.com</a></p>
+      {/* <h1>CONTACT</h1>
+      <p>click to email me:{'\n'}<a href='mailto:echilee@gmail.com'>{'\n'}echilee@gmail.com</a></p> */}
 
       </div>
      </div>
