@@ -12,7 +12,7 @@
     "react-media": "^1.8.0",
     "react-particles-js": "^2.2.0",
     "react-player": "^1.4.0",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-scroll-parallax": "^2.1.2",
     "redux": "^4.0.0",
     "source-map-explorer": "^1.5.0",
@@ -31,8 +31,8 @@
     "lint": "eslint 'src/**/*.{js,jsx}' --fix"
   },
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint": "^9.39.2",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4"
