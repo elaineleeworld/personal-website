@@ -144,7 +144,17 @@ componentDidMount() {
         );
         camera.position.z = 5;
 
-        var renderer = new THREE.WebGLRenderer();
+        var renderer;
+        try {
+            renderer = new THREE.WebGLRenderer();
+        } catch (err) {
+            // WebGL not available (e.g. in JSDOM/test or headless environments).
+            // Skip Three.js setup to avoid throwing during tests.
+            // eslint-disable-next-line no-console
+            console.warn('WebGL not available, skipping ThreeScene setup:', err && err.message);
+            return;
+        }
+
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         // MOUNT INSIDE OF REACT
