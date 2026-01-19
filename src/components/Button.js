@@ -1,14 +1,12 @@
-import React, {Component} from 'react'
-import styled from 'styled-components';
-import App from '../App.css'
-
-
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react'
+import styled from 'styled-components'
 
 const ButtonStyles = styled.button`
-cursor: pointer;
+  cursor: pointer;
   display: inline-block;
   margin-bottom: auto;
-  position:relative;
+  position: relative;
   border-radius: 10px;
   margin-top: 400px;
   width: 8rem;
@@ -16,20 +14,25 @@ cursor: pointer;
   background: #18CAE6;
   color: white;
   border: 2px solid white;
-  `
+`
 
+function Button({ click, text }) {
+  function handleClick(e) {
+    if (typeof click === 'function') return click(e)
+    // fallback behavior: show portfolio container (keeps original intent)
+    const container = document.querySelector('.button-container')
+    const portfolio = document.querySelector('#portfolio-flex-container')
+    if (container) container.style.display = 'none'
+    if (portfolio) portfolio.style.display = 'flex'
+  }
 
-const Button = ({click, text}) =>{
-	
-		return(
-			<div className='button-container' onClick={() => {
-				document.querySelector(".button-container").style.display = 'none';    
-				document.querySelector("#portfolio-flex-container").style.display = 'flex';    
-			}}>
-			<button className='button-styles'> {text}</button>
-			</div>
-			)
-	
+  return (
+    <div className="button-container">
+      <ButtonStyles className="button-styles" onClick={handleClick}>
+        {text}
+      </ButtonStyles>
+    </div>
+  )
 }
 
-export default Button;
+export default Button
