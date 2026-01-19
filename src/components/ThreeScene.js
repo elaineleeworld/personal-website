@@ -135,8 +135,8 @@ componentDidMount() {
         // BASIC THREE.JS THINGS: SCENE, CAMERA, RENDERER
         // Three.js Creating a scene tutorial
         // https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
             75,
             window.innerWidth / window.innerHeight,
             0.1,
@@ -144,7 +144,7 @@ componentDidMount() {
         );
         camera.position.z = 5;
 
-        var renderer;
+        let renderer = null;
         try {
             renderer = new THREE.WebGLRenderer();
         } catch (err) {
@@ -171,18 +171,18 @@ componentDidMount() {
         // ADD CUBE AND LIGHTS
         // https://threejs.org/docs/index.html#api/en/geometries/BoxGeometry
         // https://threejs.org/docs/scenes/geometry-browser.html#BoxGeometry
-        var geometry = new THREE.BoxGeometry(1, 1, 1);
-        var material = new THREE.MeshPhongMaterial( {
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshPhongMaterial( {
             color: 0x156289,
             emissive: 0x072534,
             side: THREE.DoubleSide,
             flatShading: true,
             // map: texture1
         } );
-        var cube = new THREE.Mesh(geometry, material);
+        const cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
 
-        var lights = [];
+        const lights = [];
         lights[ 0 ] = new THREE.PointLight( 0xffffff, 1, 0 );
         lights[ 1 ] = new THREE.PointLight( 0xffffff, 1, 0 );
         lights[ 2 ] = new THREE.PointLight( 0xffffff, 1, 0 );
@@ -263,19 +263,10 @@ componentDidMount() {
         // http://jsfiddle.net/Q4Jpu/
 
         // remember these initial values
-        var tanFOV = Math.tan( ( ( Math.PI / 180 ) * camera.fov / 2 ) );
-        var windowHeight = window.innerHeight;
+        const tanFOV = Math.tan( ( ( Math.PI / 180 ) * camera.fov / 2 ) );
+        const windowHeight = window.innerHeight;
 
-        window.addEventListener( 'resize', onWindowResize, false );
-        // window.addEventListener('click', onClickHide, false);
-
-        // function onClickHide(){
-        // 	console.log('clicked')
-        // 	// cube.visible = false
-        	
-        // }
-        function onWindowResize( event ) {
-
+        const onWindowResize = ( event ) => {
             camera.aspect = window.innerWidth / window.innerHeight;
 
             // adjust the FOV
@@ -286,13 +277,14 @@ componentDidMount() {
 
             renderer.setSize( window.innerWidth, window.innerHeight );
             renderer.render( scene, camera );
-
         }
+
+        window.addEventListener( 'resize', onWindowResize, false );
 
 
 
         // ANIMATE THE SCENE
-        var animate = function() {
+        const animate = () => {
             requestAnimationFrame(animate);
 
             cube.rotation.x += 0.01;
