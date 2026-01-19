@@ -1,20 +1,27 @@
 {
-  "main.css": "static/css/main.eb509484.css",
-  "main.css.map": "static/css/main.eb509484.css.map",
-  "main.js": "static/js/main.0d39d8e7.js",
-  "main.js.map": "static/js/main.0d39d8e7.js.map",
-  "static/media/ElaineLee_Portfolio_aminated_works.mov": "static/media/ElaineLee_Portfolio_aminated_works.525ebdf9.mov",
-  "static/media/P90x.png": "static/media/P90x.628fed7e.png",
-  "static/media/UA.png": "static/media/UA.8dee10e7.png",
-  "static/media/VueJS.png": "static/media/VueJS.05ed4c16.png",
-  "static/media/beachbody_overlay.png": "static/media/beachbody_overlay.08861e04.png",
-  "static/media/clock.jpg": "static/media/clock.9401754a.jpg",
-  "static/media/itunes.png": "static/media/itunes.6dfeb640.png",
-  "static/media/myPhoto.png": "static/media/myPhoto.74f22cbd.png",
-  "static/media/prod.png": "static/media/prod.c94da40d.png",
-  "static/media/quiz.png": "static/media/quiz.0f87ab08.png",
-  "static/media/red-tech.jpg": "static/media/red-tech.912a8a09.jpg",
-  "static/media/spacex.png": "static/media/spacex.8b6bfb63.png",
-  "static/media/stickyNotes.png": "static/media/stickyNotes.b99313b3.png",
-  "static/media/yoga.jpg": "static/media/yoga.531f9ce9.jpg"
+  "files": {
+    "main.css": "/static/css/main.e3c8cbf6.css",
+    "main.js": "/static/js/main.4d32a011.js",
+    "static/media/ElaineLee_Portfolio_aminated_works.mov": "/static/media/ElaineLee_Portfolio_aminated_works.5ec734c0e80d8fe588f5.mov",
+    "static/media/P90x.png": "/static/media/P90x.a7b204d9b271e6779894.png",
+    "static/media/itunes.png": "/static/media/itunes.daffb8cc2204e117397d.png",
+    "static/media/beachbody_overlay.png": "/static/media/beachbody_overlay.98031beea3f326779618.png",
+    "static/media/prod.png": "/static/media/prod.4e502079abe7b6cf91cb.png",
+    "static/media/yoga.jpg": "/static/media/yoga.7d6b45ab09e459425c7d.jpg",
+    "static/media/clock.jpg": "/static/media/clock.e268bc33d208a2f7d0e3.jpg",
+    "static/media/VueJS.png": "/static/media/VueJS.8012bb9ce101b5c5af5e.png",
+    "static/media/red-tech.jpg": "/static/media/red-tech.ef49be7daef3237bd7a5.jpg",
+    "static/media/spacex.png": "/static/media/spacex.666a50e9579f28404a99.png",
+    "static/media/myPhoto2026.jpg": "/static/media/myPhoto2026.cef4bbea090584bb31d8.jpg",
+    "static/media/UA.png": "/static/media/UA.83e91e7055d38a5dd5bc.png",
+    "static/media/quiz.png": "/static/media/quiz.e9c4fb3c1fb1c3a0e6fd.png",
+    "static/media/stickyNotes.png": "/static/media/stickyNotes.30eca7dd5d6cf9571935.png",
+    "index.html": "/index.html",
+    "main.e3c8cbf6.css.map": "/static/css/main.e3c8cbf6.css.map",
+    "main.4d32a011.js.map": "/static/js/main.4d32a011.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3c8cbf6.css",
+    "static/js/main.4d32a011.js"
+  ]
 }
